@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--ESTA ES LA VISTA DEFINIDA PARA LA ACTIVIDAD PRINCIPAL, CON LA QUE SE PODRA
+    ACCEDER A LA ACTIVIDAD DE REGISTRO O LOGUEARSE PARA ACCEDER A LA ACTIVIDAD
+    EN LA QUE SE MOSTRARAN LOS SITIOS DE INTERES.
+    -->
+
+    <!--En este TextView se visualiza el texto que esta encima del edit Text que captura
+    el usuario para loguearse en la app. Hace referencia al recurso @string/tfUsuario.
+    -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tfUsuario"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_user_login"
+        app:layout_constraintStart_toStartOf="@+id/et_user_login" />
+
+    <!--Este editText permite almacenar la informacion ingresada del nombre de usuario
+    en la variable etPsLogin.
+    -->
+    <EditText
+        android:id="@+id/et_pasword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_user_login" />
+
+    <!-- TextView que muestra texto contraseña o password, dependiendo del idioma-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tfPassword"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_pasword"
+        app:layout_constraintStart_toStartOf="@+id/et_pasword" />
+
+    <!--EditText que muestra el texto encima del campo de login-->
+    <EditText
+        android:id="@+id/et_user_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Boton de login que ejecuta eñl proceso de logueo a la app-->
+
+    <!--Boton de registro que envia a una nueva activity, para registrarse como usuario-->
+
+    <Button
+        android:id="@+id/btn_registro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/btnTxtRegistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/et_pasword" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/btnTxtLogin"
+        app:layout_constraintEnd_toStartOf="@+id/btn_registro"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_pasword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

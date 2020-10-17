@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab2Activities</string>
+    <string name="tfUsuario">Usuario</string>
+    <string name="tfPassword">Contraseña</string>
+    <string name="btnTxtLogin">ingresar</string>
+    <string name="btnTxtRegistro">Registro</string>
+    <string name="message_bad_login">LOGUEO FALLIDO POR DATOS INCORRECTOS</string>
+</resources>
