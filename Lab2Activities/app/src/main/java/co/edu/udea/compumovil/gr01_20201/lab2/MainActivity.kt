@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //definiciones
 
         // Creacion de referencias a las vistas
         val et_user_login : EditText = findViewById(R.id.et_user_login)
@@ -43,7 +44,12 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
+    //definicion de las funciones
+
+    //funcion que lanza la actividad que permite a los usuarios registrarse
     private fun registroUsuario() {
+        //intent que comunica la actividad ppal con la actividad de registro.
         val intent = Intent(this@MainActivity, ActivityDeRegistro::class.java)
         startActivity(intent)
     }

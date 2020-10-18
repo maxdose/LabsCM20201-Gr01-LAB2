@@ -7,8 +7,20 @@
     tools:context=".ActivityDeRegistro">
 
     <!--TITULO DE LA INTERFAZ DE REGISTRO-->
+    <EditText
+        android:id="@+id/et_user_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Correo Electrónico"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/et_pass_reg"
+        app:layout_constraintStart_toStartOf="@+id/et_pass_reg"
+        app:layout_constraintTop_toBottomOf="@+id/et_pass_reg" />
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_titulo_registro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -23,6 +35,7 @@
 
     <!--LINEA DEBAJO DEL TITULO DE LA ACTIVIDAD-->
     <View
+        android:id="@+id/view"
         android:layout_width="fill_parent"
         android:layout_height="1dp"
         android:layout_marginStart="16dp"
@@ -30,8 +43,44 @@
         android:background="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo_registro" />
 
+    <EditText
+        android:id="@+id/et_pass_reg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_user_reg"
+        app:layout_constraintStart_toStartOf="@+id/et_user_reg"
+        app:layout_constraintTop_toBottomOf="@+id/et_user_reg" />
+
+    <EditText
+        android:id="@+id/et_user_reg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Nombre De Usuario"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo_registro" />
+
+    <Button
+        android:id="@+id/btn_registrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="REGISTRAR"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/et_user_email"
+        app:layout_constraintStart_toStartOf="@+id/et_user_email"
+        app:layout_constraintTop_toBottomOf="@+id/et_user_email" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
