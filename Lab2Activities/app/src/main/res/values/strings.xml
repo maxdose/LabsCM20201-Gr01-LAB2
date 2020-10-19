@@ -5,4 +5,6 @@
     <string name="btnTxtLogin">ingresar</string>
     <string name="btnTxtRegistro">Registro</string>
     <string name="message_bad_login">LOGUEO FALLIDO POR DATOS INCORRECTOS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
